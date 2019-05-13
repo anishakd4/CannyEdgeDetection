@@ -14,9 +14,11 @@ int main(){
 
     //Define canny params
     int lowThreshold = 50;
-    int highTHreshold = 150;
+    int highTHreshold = 130;
     //You can choose aperture size as 5 or 7 also
     int apertureSize = 3;
+
+    GaussianBlur(image, image, Size(3, 3), 0, 0);
 
     //Apply canny
     Canny(image, output, lowThreshold, highTHreshold, apertureSize);

@@ -6,9 +6,12 @@ image = cv2.imread("../assets/anish.jpg", cv2.IMREAD_GRAYSCALE)
 
 #define canny params
 lowThreshold = 50
-highTHreshold = 150
+highTHreshold = 130
 #you can choose aperture size as 3 or 5 or 7
 apertureSize=3
+
+#apply gaussian blur
+image = cv2.GaussianBlur(image, (3, 3), 0, 0)
 
 #apply canny
 output = cv2.Canny(image, lowThreshold, highTHreshold, apertureSize=apertureSize)
