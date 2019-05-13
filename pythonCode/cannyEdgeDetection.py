@@ -10,7 +10,7 @@ highTHreshold = 130
 #you can choose aperture size as 3 or 5 or 7
 apertureSize=3
 
-#apply gaussian blur
+# Blur the image before edge detection
 image = cv2.GaussianBlur(image, (3, 3), 0, 0)
 
 #apply canny

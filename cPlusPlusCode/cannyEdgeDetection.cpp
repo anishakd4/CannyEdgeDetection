@@ -18,6 +18,7 @@ int main(){
     //You can choose aperture size as 5 or 7 also
     int apertureSize = 3;
 
+    // Blur the image before edge detection
     GaussianBlur(image, image, Size(3, 3), 0, 0);
 
     //Apply canny
